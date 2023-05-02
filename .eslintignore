@@ -1,0 +1,7 @@
+node_modules
+*.log*
+.env
+dist
+webpack.*.js
+release.js
+jest.config.js

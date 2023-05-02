@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Kokosuki stamp",
+  "short_name": "Kokosuki stamp",
+  "description": "Youtubeでタイムスタンプを自動生成します。",
+  "version": "0.1.1",
+  "author": "いちごまかろん",
+
+  "icons": {
+    "16": "icons/16.png",
+    "32": "icons/32.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["main.js"],
+      "css": []
+    }
+  ],
+
+  "action": {
+    "default_icon": {
+      "16": "icons/16.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "128": "icons/128.png"
+    }
+  },
+
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/*", "icon-128.png", "icon-34.png"],
+      "matches": []
+    }
+  ],
+
+  "permissions": ["storage"]
+}
