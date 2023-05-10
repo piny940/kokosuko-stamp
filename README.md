@@ -1,20 +1,35 @@
-## 参考にさせていただいたリポジトリ
+# Kokosuki stamp
 
-https://github.com/17number/chrome-extension-template-webpack-babel
+Youtubeのコメント欄でタイムスタンプを作成するのを支援するchrome拡張機能です。
 
-## このテンプレートについて
+・機能
+YouTubeのタイムスタンプ作成支援ツールです。コメントや概要欄で時間指定する時に使用します。
 
-上記参考にさせていただいたリポジトリの構成を元に、TypeScript の開発環境を作りました。
+・使い方
+「+」ボタンをクリックするとその時点での動画・配信の経過時間が記録されます。
 
-ついでに manifest も v3 にしようとしましたが、ホットリロードで使用している
-[rubenspgcavalcante/webpack-extension-reloader](https://github.com/rubenspgcavalcante/webpack-extension-reloader)
-が v3 未対応だったので断念しました。
+「メモを入力」という欄にメモを書いた状態でプラスボタンを押すと、タイムスタンプにメモを残すことができます。このメモはタイムスタンプ作成後も下のリストから編集することができます。
 
-今後、webpack-extension-reloader が更新されるか、他のライブラリを発掘した時にでも修正しようと思います。
+「オフセット」はタイムスタンプを押した時点での動画・配信の経過時間と実際にタイムスタンプに記録される時間の差を表しています。例えばオフセットが-4の場合、動画の19:24時点でタイムスタンプを押した場合、実際に記録される時間は19:20になります。
 
-## TypeScript のままでデバッグする方法について
+作成したタイムスタンプリストはコピーボタンを押すことでクリップボードにコピーすることができます。
 
-[こちらで](https://takumi-oda.com/blog/2021/06/09/i-made-a-template-for-making-a-chrome-extension-with-typescript/)
-詳細を書いています。
+・注意事項
+※リアルタイムの場合、回線等の状況によっては実際の経過時間とズレることがあります。
+※Youtube Live Clockと併用した場合、一部表示が乱れることがあります。タイムスタンプ作成に支障はございません。
 
-Chrome の開発者ツールを使って TypeScript のコードのままブレークポイントはったりしてデバッグできます。
+・免責事項
+このChrome拡張によりいかなる損失や損害などが発生しても責任を負いかねます。ご了承ください。
+
+Assists in creating YouTube timestamps.
+Functions
+This is a tool to assist in creating YouTube timestamps. It is used to specify the time in the comment or summary field.
+
+How to use
+Click the "+" button to record the elapsed time of the video/streaming at that point.
+
+Notes
+In the case of real time, the actual elapsed time may differ depending on the connection conditions, etc.
+
+Disclaimer
+We are not responsible for any loss or damage caused by this Chrome Extension. Please understand that we are not responsible for any loss or damage caused by this extension.
