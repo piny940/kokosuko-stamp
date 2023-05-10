@@ -1,8 +1,9 @@
 {
   "name": "kokosuko",
-  "author": "いちごまかろん",
+  "author": "piny940",
   "private": true,
   "version": "0.1.0",
+  "license": "Apache-2.0",
   "scripts": {
     "dev": "webpack --config webpack.dev.js",
     "watch": "webpack --config webpack.dev.js --watch",
