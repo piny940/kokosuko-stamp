@@ -1,5 +1,7 @@
 # Kokosuki stamp
 
+chromeウェブストア: https://chrome.google.com/webstore/detail/kokosuki-stamp/pnbpecefaimbeadmmombelidgkkgfeeg?hl=ja
+
 Youtubeのコメント欄でタイムスタンプを作成するのを支援するchrome拡張機能です。
 
 ・機能
